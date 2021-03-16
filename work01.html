@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    //189000437 梁擎
+    //三角形
+    for(var i = 1;i <= 5;i++){
+        //行数
+        for(var k = 5;k > i;k--){
+            document.write("&nbsp;&nbsp;");
+        }
+        //*号数量
+        for(var j = 1;j <= i;j++){
+            document.write("&nbsp;&nbsp;&nbsp;*");
+        }
+        document.write('<br/>');
+    }
+
+    //平行四边形
+    for(var i = 1;i <= 5;i++){
+        for(var k = 5;k >= i;k--){
+            document.write("&nbsp;&nbsp;&nbsp;");
+        }
+        for(var j = 1;j <= 5;j++){
+            document.write("&nbsp;&nbsp;&nbsp;*");
+        }
+        document.write('<br/>');
+    }
+
+    //菱形
+    for(var i = 1;i <= 3;i++){
+        for(var k = 3;k > i;k--){
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+        for(var j = 1;j <= 2 * i - 1;j++){
+            document.write("&nbsp;&nbsp;&nbsp;*");
+        }
+        document.write('<br/>');
+    }
+
+    for(var i = 2;i >= 1;i--){
+        for(var k = 3;k > i;k--){
+            document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+        for(var j = 1;j <= 2 * i - 1;j++){
+            document.write("&nbsp;&nbsp;&nbsp;*");
+        }
+        document.write('<br/>');
+    }
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
